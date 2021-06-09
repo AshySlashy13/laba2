@@ -11,6 +11,7 @@ int main()
     int x_end = 0;
     int d_step = 0;
     int F = 0;
+    int Sum = 0;
     cout << "a: ";
     cin >> a;
     cout << "b: ";
@@ -23,7 +24,8 @@ int main()
     cin >> x_end;
     cout << "step: ";
     cin >> d_step;
-
+Sum = a+b+c;
+cout << "Sum = " << Sum <<'\n';
     for (int i = x_begin; i < x_end; i += d_step){
         if (c < 0 && i*i != 0)
             F = - a * i * i;
